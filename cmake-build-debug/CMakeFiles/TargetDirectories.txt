@@ -1,0 +1,3 @@
+/home/gavin/ghbot/cmake-build-debug/CMakeFiles/ghbot.dir
+/home/gavin/ghbot/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gavin/ghbot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
