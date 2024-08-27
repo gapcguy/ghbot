@@ -29,7 +29,6 @@ void checkForConfigAndLoad(const string& filename) {
     } else {
         Logger::log("Configuration file not found or unable to be opened. Proceeding with the creation of a new configuration file.");
         write(filename);
-
     }
 
 }
@@ -42,7 +41,7 @@ string getDatabasePassword() { return databasePassword; }
 string getDatabaseSchema()   { return databaseSchema;   }
 string getLanguage()         { return language;         }
 
-void setDatabaseUrl     (const string& url     )    { databaseUrl       = url;          }
+static void setDatabaseUrl     (const string& url     )    { databaseUrl       = url;          }
 void setDatabaseUsername(const string& username)    { databaseUsername  = username;     }
 void setDatabasePassword(const string& password)    { databasePassword  = password;     }
 void setDatabaseSchema  (const string& schema  )    { databaseSchema    = schema;       }

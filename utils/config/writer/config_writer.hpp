@@ -7,7 +7,7 @@
 
 class ConfigWriter {
     public:
-    static void writeConfig(const std::string *filePath, const Config &config);
+    static void writeConfig(std::ofstream filePath);
 };
 
 #endif //CONFIG_WRITER_HPP

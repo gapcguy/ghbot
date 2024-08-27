@@ -23,12 +23,11 @@ void   Helpers::printLn      (const string& msg                         ) { cout
 void   Helpers::print        (const string& msg                         ) { cout << msg;             }
 string Helpers::input        (const string& prompt                      ) {
     string input;
-    if (prompt.empty()) {
-        // No prompt is provided; just accept user input.
-        getline(cin, input);
-    } else {
-        print(prompt);
-        getline(cin, input);
-    }
+    print(prompt + " ");
+    getline(cin, input);
     return input;
+}
+
+void Helpers::configWriter(std::ostream& file, const string& key, const string& value) {
+    file << key << "=" << value << endl;
 }
